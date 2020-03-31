@@ -8,118 +8,113 @@
     <title>Dustin Irving</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styling/style.css">
 </head>
 
+<header>
+    <div class="row">
+        <h1 class="text-center p-3 blue-background text-white mb-0 col-12"><a class="text-reset text-decoration-none font-style" href="index.html">DUSTIN IRVING</a></h1>
+    </div>
 
+</header>
 
 <body>
-    <header>
-        <h1 class="text-center p-3 bg-dark text-white mb-0"><a class="text-reset text-decoration-none font-style" href="index.html">DUSTIN IRVING</a></h1>
-    </header>
-
     <section>
-        <div class="row bg-light mt-0">
-            <div class="col-4 text-center"><button class="btn hover"><a class = "text-reset text-decoration-none font-style" href="#about-section">About</a></button></div>
-            <div class="col-4 text-center p-2">
-                <a href="https://github.com/dustinirving"><i class="fab fa-github fa-2x"></i></a>
-                <a href="mailto:dustin.irving@gmail.com? subject=subject text"><i class="fas fa-envelope-square fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/dustin-irving-a92009194/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <div class="row bg-light mt-0 light-border">
+            <div class="col-3 text-center"><button class="btn hover"><a class = "text-reset text-decoration-none font-style" href="#about-section">About</a></button></div>
+            <div class="col-6 text-center p-2">
+                <a class="text-reset" href="https://github.com/dustinirving"><i class="fab fa-github fa-2x icon pb-0"></i></a>
+                <a class="text-reset" href="resume.pdf"><i class="fa fa-file-text fa-2x icon"></i></a>
+                <a class="text-reset" href="mailto:dustin.irving@gmail.com? subject=subject text"><i class="fas fa-envelope-square fa-2x icon"></i></a>
+                <a class="text-reset" href="https://www.linkedin.com/in/dustin-irving-a92009194/"><i class="fab fa-linkedin fa-2x icon"></i></a>
             </div>
-            <div class="col-4 text-center"><button class="btn hover"><a class = "text-reset text-decoration-none font-style" href="#projects-section">Projects</a></button></div>
+            <div class="col-3 text-center"><button class="btn hover"><a class = "text-reset text-decoration-none font-style" href="#projects-section">Projects</a></button></div>
         </div>
-        <div id="background" background="background.jpeg">
-            <div class="container">
-                <!-- Word Cloud -->
-                <section>
-
-                </section>
-
-                <!-- Projects -->
-                <section id="projects-section">
-                    <div class="row pt-3">
-                        <div class="col">
-                            <h2>Recent Projects</h2>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-6">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/">
-                                <div class="card zoom" style="width: 30rem; height: 25rem;">
-                                    <img src="images/weather-forecast.png" class="card-img-top" alt="weather">
-                                    <div class="card-body">
-
-                                        <p class="card-text">Makes use of a weather API to display the weather forecast for a specified city.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 pl-5">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/daily-planner/">
-                                <div class="card zoom" style="width: 30rem; height: 25rem;">
-                                    <img src="images/daily-planner.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">A user can enter the daily events into a planner and save that information.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-6">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/password-generator">
-                                <div class="card zoom" style="width: 30rem; height: 25rem;">
-                                    <img src="images/password-generator.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">This program takes a set of parameters and randomly generates a password.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 pl-5">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/country-capitals/">
-                                <div class="card zoom" style="width: 30rem; height: 25rem;">
-                                    <img src="images/capital-quiz.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">The main goal of this project was to create a quiz by updating the DOM with javascript. As the user answers the questions, the DOM is updated with the next question.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </section>
-
-                <!-- About -->
-                <section class="mt-5 mb-5" id="about-section">
-                    <div class="row">
-                        <div class="col-8">
-                            <h2>About</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p id="bio" class="col-8"> Full Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Spent the last two years teaching English in South Korea, whilst
-                            pursuing web development. Knowledgeable in all areas of computer programming. Expertise in HTML, CSS, Javascript, Python, React.js, MYSQL, MongoDB and many more. Dedicated individual with exceptional problem solving skills
-                            and an objective way of thinking. Passionate about learning and creating sophisticated projects. It is through determination and persistence that excellent work is made. While some lose patience and drive, this is not an issue
-                            with me and with every project an obsession develops. Most recently, I have developed a program that allows users to plan out their day. Overall, my technical knowledge, passion and strong interpersonal skills are a strong
-                            addition to any team.</p>
-                        <img id="dustin-image" class="col-4 rounded-pill img-fluid" src="images/dustin.jpeg" alt="">
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </section>
-                <footer class="text-center mt-5">
-                    Copyright
-                </footer>
+    </section>
+    <div class="container">
+        <!-- About -->
+        <section class="mt-4 mb-5 bg-light card" id="about-section">
+            <div class="row blue-background ml-0 mr-0 p-1 text-white card-header">
+                <div class="col d-flex justify-content-center font-style">
+                    <h2>About</h2>
+                </div>
+            </div>
+            <div class="row">
+                <p id="bio" class="pt-3 pl-5 pr-5 col-xl-7 col-lg-12 d-flex justify-content-center"> Full Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Spent the last two years teaching English in South Korea, whilst pursuing
+                    web development. Knowledgeable in all areas of computer programming. Expertise in HTML, CSS, Javascript, Python, React.js, MYSQL, MongoDB and many more. Dedicated individual with exceptional problem solving skills and an objective
+                    way of thinking. Passionate about learning and creating sophisticated projects. It is through determination and persistence that excellent work is made. While some lose patience and drive, this is not an issue with me and with every
+                    project an obsession develops. Most recently, I have developed a program that allows users to plan out their day. Overall, my technical knowledge, passion and strong interpersonal skills are a strong addition to any team.</p>
+                <img id="dustin-image" class="pt-4 pl-5 pr-5 pb-5 col-xl-5 col-lg-12 rounded d-flex justify-content-center" src="images/dustin.jpeg" alt="">
             </div>
 
+        </section>
 
-        </div>
-        <script src="scripts/script.js"></script>
+        <!-- Projects -->
+        <section class="bg-light mt-4 card" id="projects-section">
+            <div class="row blue-background mr-0 ml-0 p-1 text-white card-header">
+                <div class="col-12 d-flex justify-content-center font-style">
+                    <h2>Recent Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                    <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/">
+                        <div class="card zoom project">
+                            <img src="gifs/weather-forecast-image.jpg" class="card-img-top" alt="weather" data-animate="gifs/weather-forecast.gif" data-still="gifs/weather-forecast-image.jpg" data-state="still">
+                            <div class="card-body">
+
+                                <p class="card-text">This application makes use of a weather API to display the 5-day weather forecast for a specified location. I was tasked with developing the user interface in HTML and Bootstrap, while also using Javascript to fetch the
+                                    data and create functionality.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                    <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/daily-planner/">
+                        <div class="card zoom project">
+                            <img src="gifs/planner-image.jpg" class="card-img-top" alt="..." data-animate="gifs/planner.gif" data-still="gifs/planner-image.jpg" data-state="still">
+                            <div class="card-body">
+                                <p class="card-text">In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day. To develop this application, I used Bootstrap and HTML for the front
+                                    end and javascript to make the elements interactive.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                    <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/password-generator">
+                        <div class="card zoom project">
+                            <img src="gifs/quiz-image.jpg" class="card-img-top" alt="..." data-animate="gifs/quiz.gif" data-still="gifs/quiz-image.jpg" data-state="still">
+                            <div class="card-body">
+                                <p class="card-text">This program takes a set of parameters and randomly generates a password.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                    <a class="text-reset text-decoration-none" href="https://lagbana.github.io/covid19-tracker/">
+                        <div class="card zoom project">
+                            <img src="gifs/covid-image.jpg" class="card-img-top" alt="..." data-animate="gifs/covid.gif" data-still="gifs/covid-image.jpg" data-state="still">
+                            <div class="card-body">
+                                <p class="card-text">The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. My role consisted of developing a script that
+                                    would obtain the data and display it in a graph. This was all done with MaterializeCSS, HTML5, Javascript, Chart.js, a COVID-19 API, and the NYT API.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5">
+            Copyright
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

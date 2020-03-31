@@ -1,22 +1,23 @@
-#background {
-    background: 'background.jpeg'
-}
-
-.hover:hover {
-    background-color: lightgray;
+.light-border {
+    border-bottom: 1px solid #DCDCDC;
 }
 
 .hover {
     font-size: 22px;
 }
 
+.hover:hover {
+    background-color: lightgray;
+}
+
 .font-style {
-    font-family: 'Rock Salt';
+    font-family: 'Oswald';
 }
 
 #bio {
     font-size: 22px;
-    line-height: 40px;
+    line-height: 35px;
+    font-weight: 350;
 }
 
 .zoom {
@@ -28,5 +29,47 @@
 
 .zoom:hover {
     transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: gray;
+}
+
+.blue-background {
+    background-color: #4484CE
+}
+
+@media (min-width: 992px) {
+    .project {
+        width: 30rem;
+        height: 25rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .project {
+        width: 25rem;
+        height: 20rem;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 768px) {
+    .project {
+        width: 20rem;
+        height: 15rem;
+        font-size: 8px;
+    }
+    .hover {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 373px) {
+    .project {
+        width: 15rem;
+        height: 10rem;
+        font-size: 5px;
+    }
 }
