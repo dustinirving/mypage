@@ -21,8 +21,6 @@ section {
     position: relative;
 }
 
-#projects-section {}
-
 
 /* Landing Page */
 
@@ -67,8 +65,13 @@ section {
     border-bottom: 1px solid #DCDCDC;
 }
 
-.hover {
+.nav-font {
     font-size: 22px;
+    font-family: 'Oswald'
+}
+
+.font-style {
+    font-family: 'Oswald'
 }
 
 
@@ -76,14 +79,6 @@ section {
 
 .hover:hover {
     background-color: lightgray;
-}
-
-.font-style {
-    font-family: 'Oswald';
-}
-
-.font-20 {
-    font-size: 20px;
 }
 
 
@@ -214,10 +209,10 @@ section {
 
 @media (max-width: 373px) {
     #projects-section {
-        height: 190vh;
+        height: 200vh;
     }
     #about-section {
-        height: 190vh;
+        height: 200vh;
     }
     .project {
         width: 18rem;
