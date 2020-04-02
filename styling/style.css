@@ -1,3 +1,5 @@
+/* Smooth scrolling */
+
 html,
 body {
     height: 100vh;
@@ -17,8 +19,9 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     position: relative;
-    text-align: center;
 }
+
+#projects-section {}
 
 
 /* Landing Page */
@@ -26,15 +29,13 @@ section {
 #landing-page {
     color: white;
     background-color: #4484CE;
-    font-size: 60px;
     text-align: center;
     font-style: 'oswald';
     height: 100vh;
 }
 
 #typed-text {
-    padding-top: 300px;
-    padding-bottom: 80px;
+    padding-top: 35vh;
 }
 
 .blinking-cursor {
@@ -43,9 +44,24 @@ section {
     animation: blink 1s steps(2, start) infinite;
 }
 
-.scrollButton {
-    margin-top: 200px;
+
+/* Centered header section */
+
+#header {
+    text-align: center;
 }
+
+
+/* Position of Scroll Text */
+
+.scrollButton {
+    position: absolute;
+    bottom: 3vh;
+    text-align: center;
+}
+
+
+/* Border for Header */
 
 .light-border {
     border-bottom: 1px solid #DCDCDC;
@@ -54,6 +70,9 @@ section {
 .hover {
     font-size: 22px;
 }
+
+
+/* Hover Nav Bar */
 
 .hover:hover {
     background-color: lightgray;
@@ -67,15 +86,16 @@ section {
     font-size: 20px;
 }
 
-.font-36 {
-    font-size: 72px;
+
+/* Intro Text */
+
+.font-cursive {
     font-family: cursive;
 }
 
-#bio {
-    font-size: 22px;
-    line-height: 35px;
-    font-weight: 350;
+.cursive-box {
+    position: absolute;
+    top: 30vh;
 }
 
 .zoom {
@@ -98,43 +118,121 @@ section {
     background-color: #4484CE
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .project {
-        width: 25rem;
+        width: 24rem;
+        height: 20rem;
+        font-size: 16px;
+    }
+    #bio {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 350;
+    }
+}
+
+@media (max-width: 1200px) {
+    #projects-section {
+        height: 200vh;
+    }
+    #about-section {
+        height: 250vh;
+    }
+    .project {
+        width: 24rem;
         height: 20rem;
         font-size: 16px;
     }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
-    .project {
-        width: 22rem;
-        height: 18rem;
-        font-size: 12px;
+@media (min-width: 992px) {
+    #landing-page {
+        font-size: 60px;
     }
-    section {
-        height: 175vh;
+    .font-cursive {
+        font-size: 65px;
+    }
+    #bio {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 350;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #projects-section {
+        height: 200vh;
+    }
+    #about-section {
+        height: 220vh;
+    }
+    .project {
+        width: 24rem;
+        height: 20rem;
+        font-size: 16px;
+    }
+    #landing-page {
+        font-size: 55px;
+    }
+    .font-cursive {
+        font-size: 50px;
+    }
+    #bio {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 350;
     }
 }
 
 @media (min-width: 374px) and (max-width: 768px) {
+    #projects-section {
+        height: 190vh;
+    }
+    #about-section {
+        height: 190vh;
+    }
     .project {
         width: 20rem;
         height: 15rem;
-        font-size: 8px;
+        font-size: 12px;
     }
     .hover {
         font-size: 18px;
     }
-    section {
-        height: 175vh;
+    #landing-page {
+        font-size: 50px;
+    }
+    .font-cursive {
+        font-size: 35px;
+    }
+    #bio {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 350;
     }
 }
 
 @media (max-width: 373px) {
+    #projects-section {
+        height: 190vh;
+    }
+    #about-section {
+        height: 190vh;
+    }
     .project {
         width: 15rem;
-        height: 10rem;
-        font-size: 5px;
+        height: 12rem;
+        font-size: 9px;
+    }
+    #landing-page {
+        font-size: 45px;
+    }
+    .font-cursive {
+        font-size: 30px;
+    }
+    #bio {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 350;
     }
 }
