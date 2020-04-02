@@ -8,6 +8,14 @@ landingButton.addEventListener("click", function() {
     window.location.hash = "header"
 })
 
+// Projects Button
+
+let projectsButton = document.getElementById("projects-button")
+
+projectsButton.addEventListener("click", function() {
+    window.location.hash = "projects-section"
+})
+
 // Landing Page Writer
 
 const elementNode = document.getElementById('type-text')

@@ -59,7 +59,7 @@
                     <p id="quote" class="col-8 font-cursive">I enjoy combining logic with creativity to create user-friendly applicatons.</p>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <button class="btn text-dark scrollButton col">
+                    <button id="projects-button" class="btn text-dark scrollButton col">
                                 Check out my work. <br> <i class="fas fa-angle-down"></i>
                     </button>
                 </div>
@@ -71,80 +71,84 @@
 
         <div class="container">
             <!-- Projects -->
-            <section class="bg-light mt-4 card section" id="projects-section">
-                <div class="blue-background text-white card-header p-1">
-                    <div class="font-style d-flex justify-content-center">
-                        <h2>Recent Projects</h2>
+            <section id="projects-section">
+                <div class="bg-light mt-4 card section">
+                    <div class="blue-background text-white card-header p-1">
+                        <div class="font-style d-flex justify-content-center">
+                            <h2>Recent Projects</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
-                        <a class="text-reset text-decoration-none" href="https://lagbana.github.io/covid19-tracker/" target="_blank">
-                            <div class="card zoom project shadow">
-                                <img src="gifs/covid-image.jpg" class="card-img-top" alt="..." data-animate="gifs/covid.gif" data-still="gifs/covid-image.jpg" data-state="still">
-                                <div class="card-body">
-                                    <p class="card-text">The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. </p>
+                    <div class="row">
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
+                            <a class="text-reset text-decoration-none" href="https://lagbana.github.io/covid19-tracker/" target="_blank">
+                                <div class="card zoom project shadow">
+                                    <img src="gifs/covid-image.jpg" class="card-img-top" alt="..." data-animate="gifs/covid.gif" data-still="gifs/covid-image.jpg" data-state="still">
+                                    <div class="card-body">
+                                        <p class="card-text">The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                        <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/" target="_blank">
-                            <div class="card zoom project shadow">
-                                <img src="gifs/weather-forecast-image.jpg" class="card-img-top" alt="weather" data-animate="gifs/weather-forecast.gif" data-still="gifs/weather-forecast-image.jpg" data-state="still">
-                                <div class="card-body">
-                                    <p class="card-text">This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed. </p>
+                            </a>
+                        </div>
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/" target="_blank">
+                                <div class="card zoom project shadow">
+                                    <img src="gifs/weather-forecast-image.jpg" class="card-img-top" alt="weather" data-animate="gifs/weather-forecast.gif" data-still="gifs/weather-forecast-image.jpg" data-state="still">
+                                    <div class="card-body">
+                                        <p class="card-text">This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed. </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                </div>
-                <div class="row mb-4">
-                    <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                        <a class="text-reset text-decoration-none" href="https://github.com/dustinirving/country-capitals" target="_blank">
-                            <div class="card zoom project shadow">
-                                <img src="gifs/quiz-image.jpg" class="card-img-top" alt="..." data-animate="gifs/quiz.gif" data-still="gifs/quiz-image.jpg" data-state="still">
-                                <div class="card-body">
-                                    <p class="card-text">This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores. </p>
-                                </div>
-                            </div>
-                        </a>
                     </div>
-                    <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                        <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/daily-planner/" target="_blank">
-                            <div class="card zoom project shadow">
-                                <img src="gifs/planner-image.jpg" class="card-img-top" alt="..." data-animate="gifs/planner.gif" data-still="gifs/planner-image.jpg" data-state="still">
-                                <div class="card-body">
-                                    <p class="card-text">In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.</p>
+                    <div class="row mb-4">
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                            <a class="text-reset text-decoration-none" href="https://github.com/dustinirving/country-capitals" target="_blank">
+                                <div class="card zoom project shadow">
+                                    <img src="gifs/quiz-image.jpg" class="card-img-top" alt="..." data-animate="gifs/quiz.gif" data-still="gifs/quiz-image.jpg" data-state="still">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores. </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
+                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/daily-planner/" target="_blank">
+                                <div class="card zoom project shadow">
+                                    <img src="gifs/planner-image.jpg" class="card-img-top" alt="..." data-animate="gifs/planner.gif" data-still="gifs/planner-image.jpg" data-state="still">
+                                    <div class="card-body">
+                                        <p class="card-text">In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
 
                 </div>
             </section>
 
             <!-- About -->
-            <section class="mt-4 mb-4 bg-light card" id="about-section">
-                <div class="row blue-background ml-0 mr-0 p-1 text-white card-header">
-                    <div class="col d-flex justify-content-center font-style">
-                        <h2>About</h2>
+            <section id="about-section">
+                <div class="mt-4 mb-4 bg-light card pb-3">
+                    <div class="row blue-background ml-0 mr-0 p-1 text-white card-header">
+                        <div class="col d-flex justify-content-center font-style">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <p id="bio" class="pt-4 pl-5 pr-5 col-xl-7 col-lg-12 d-flex justify-content-center"> Full Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Knowledgeable in all areas of computer programming. Expertise in
+                            HTML, CSS, Bootstrap, Javascript, Node.js, Python, React.js, MYSQL, MongoDB and more. Dedicated individual with exceptional problem solving skills and an objective way of thinking. Passionate about learning, creating and improving.
+                            With every project, an obsession develops, until the finer details are optimized for user experience. When I am not busy working on a project, I enjoy travelling, camping and being outdoors. Thanks for visitng website. Please
+                            feel free to contact me and check out my Github, Linkedin, and Resume. </p>
+                        <img id="dustin-image" class="pt-4 pl-5 pr-5 col-xl-5 col-lg-12 rounded d-flex justify-content-center img-responsive" src="images/dustin.jpeg" alt="">
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <p id="bio" class="pt-4 pl-5 pr-5 col-xl-7 col-lg-12 d-flex justify-content-center"> Full Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Knowledgeable in all areas of computer programming. Expertise in HTML,
-                        CSS, Bootstrap, Javascript, Node.js, Python, React.js, MYSQL, MongoDB and more. Dedicated individual with exceptional problem solving skills and an objective way of thinking. Passionate about learning, creating and improving. With
-                        every project, an obsession develops until the finer details are optimized for user experience. When I am not busy working on a project, I enjoy travelling, camping and being outdoors. Thanks for visitng website. Please feel free
-                        to contact me and check out my Github, Linkedin, and Resume. </p>
-                    <img id="dustin-image" class="pt-4 pl-5 pr-5 col-xl-5 col-lg-12 rounded d-flex justify-content-center img-responsive" src="images/dustin.jpeg" alt="">
-                </div>
+                <footer class="text-center mt-2">
+                    &copy; Copyright 2020
+                </footer>
             </section>
             <!-- Footer -->
-            <footer class="text-center mt-5">
-                Copyright 2020
-            </footer>
+
         </div>
     </div>
     <script src="scripts/script.js"></script>

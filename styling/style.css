@@ -131,12 +131,12 @@ section {
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     #projects-section {
-        height: 200vh;
+        height: 240vh;
     }
     #about-section {
-        height: 250vh;
+        height: 280vh;
     }
     .project {
         width: 24rem;
@@ -164,12 +164,12 @@ section {
         height: 200vh;
     }
     #about-section {
-        height: 220vh;
+        height: 250vh;
     }
     .project {
-        width: 24rem;
-        height: 20rem;
-        font-size: 16px;
+        width: 22rem;
+        height: 16rem;
+        font-size: 12px;
     }
     #landing-page {
         font-size: 55px;
@@ -189,7 +189,7 @@ section {
         height: 190vh;
     }
     #about-section {
-        height: 190vh;
+        height: 200vh;
     }
     .project {
         width: 20rem;
@@ -220,9 +220,9 @@ section {
         height: 190vh;
     }
     .project {
-        width: 15rem;
-        height: 12rem;
-        font-size: 9px;
+        width: 18rem;
+        height: 14rem;
+        font-size: 10px;
     }
     #landing-page {
         font-size: 45px;
