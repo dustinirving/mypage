@@ -1,3 +1,52 @@
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parent {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Landing Page */
+
+#landing-page {
+    color: white;
+    background-color: #4484CE;
+    font-size: 60px;
+    text-align: center;
+    font-style: 'oswald';
+    height: 100vh;
+}
+
+#typed-text {
+    padding-top: 300px;
+    padding-bottom: 80px;
+}
+
+.blinking-cursor {
+    pointer-events: none;
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.scrollButton {
+    margin-top: 200px;
+}
+
 .light-border {
     border-bottom: 1px solid #DCDCDC;
 }
@@ -12,6 +61,15 @@
 
 .font-style {
     font-family: 'Oswald';
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-36 {
+    font-size: 72px;
+    font-family: cursive;
 }
 
 #bio {
@@ -42,16 +100,20 @@
 
 @media (min-width: 992px) {
     .project {
-        width: 30rem;
-        height: 25rem;
+        width: 25rem;
+        height: 20rem;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
     .project {
-        width: 25rem;
-        height: 20rem;
+        width: 22rem;
+        height: 18rem;
         font-size: 12px;
+    }
+    section {
+        height: 175vh;
     }
 }
 
@@ -63,6 +125,9 @@
     }
     .hover {
         font-size: 18px;
+    }
+    section {
+        height: 175vh;
     }
 }
 
