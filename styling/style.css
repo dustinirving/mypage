@@ -1,23 +1,13 @@
 /* Smooth scrolling */
 
-html,
-body {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .parent {
     overflow: scroll;
     height: 100vh;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
 section {
     height: 100vh;
-    scroll-snap-align: start;
     position: relative;
 }
 
@@ -30,6 +20,8 @@ section {
     text-align: center;
     font-style: 'oswald';
     height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
 
 #typed-text {
@@ -124,14 +116,32 @@ section {
         line-height: 40px;
         font-weight: 350;
     }
+    html,
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .parent {
+        overflow: scroll;
+        height: 100vh;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    section {
+        height: 100vh;
+        scroll-snap-align: start;
+        position: relative;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
     #projects-section {
-        height: 240vh;
+        height: 200vh;
     }
     #about-section {
-        height: 280vh;
+        height: 250vh;
     }
     .project {
         width: 24rem;
@@ -156,10 +166,10 @@ section {
 
 @media (min-width: 769px) and (max-width: 991px) {
     #projects-section {
-        height: 200vh;
+        height: 180vh;
     }
     #about-section {
-        height: 250vh;
+        height: 220vh;
     }
     .project {
         width: 22rem;
@@ -181,7 +191,7 @@ section {
 
 @media (min-width: 374px) and (max-width: 768px) {
     #projects-section {
-        height: 190vh;
+        height: 160vh;
     }
     #about-section {
         height: 200vh;
