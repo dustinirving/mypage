@@ -17,6 +17,9 @@ projectsButton.addEventListener("click", function() {
 })
 
 // Landing Page Writer
+// These lines write and erase letters like a typewriter
+// This was taken from Codepen
+// https://codepen.io/FelixLuciano/pen/PoqdMKP
 
 const elementNode = document.getElementById('type-text')
 let text = ''
@@ -106,7 +109,9 @@ function typeLoop() {
 
 typeLoop()
 
-// This animates the gifs on hover
+// Landing page writer code ends
+
+// This animates the gifs on hover and changes the gif to a picture when the user moves off the gif
 
 let projects = document.getElementById("projects-section")
 

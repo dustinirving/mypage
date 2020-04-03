@@ -1,8 +1,20 @@
 /* Smooth scrolling */
 
+
+/* This allows the scrolling to slowly move from one section to another */
+
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .parent {
     overflow: scroll;
     height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -20,9 +32,11 @@ section {
     text-align: center;
     font-style: 'oswald';
     height: 100vh;
-    scroll-snap-align: start;
     position: relative;
 }
+
+
+/* Add padding to the top of the screen */
 
 #typed-text {
     padding-top: 35vh;
@@ -57,10 +71,16 @@ section {
     border-bottom: 1px solid #DCDCDC;
 }
 
+
+/* Font of navigation bar tabs */
+
 .nav-font {
     font-size: 22px;
     font-family: 'Oswald'
 }
+
+
+/* Font style */
 
 .font-style {
     font-family: 'Oswald'
@@ -80,10 +100,16 @@ section {
     font-family: cursive;
 }
 
+
+/* Make the text positioned from the top of the screen */
+
 .cursive-box {
     position: absolute;
     top: 30vh;
 }
+
+
+/* Projects Zoom */
 
 .zoom {
     transition: transform .2s;
@@ -92,30 +118,45 @@ section {
     height: 200px;
 }
 
+
+/* When you hover over one of the projects */
+
 .zoom:hover {
     transform: scale(1.1);
 }
+
+
+/* When you hover over an icon in the navigation bar */
 
 .icon:hover {
     transform: scale(1.2);
     color: gray;
 }
 
+
+/* This blue background is reused */
+
 .blue-background {
     background-color: #4484CE
 }
 
+
+/* Responsiveness */
+
 @media (min-width: 1200px) {
+    /* This is the size of the project cards */
     .project {
         width: 24rem;
         height: 20rem;
         font-size: 16px;
     }
+    /* The size of the bio text */
     #bio {
         font-size: 24px;
         line-height: 40px;
         font-weight: 350;
     }
+    /* Snap scrolling effect */
     html,
     body {
         height: 100vh;
@@ -137,12 +178,15 @@ section {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    /* The size of the project section */
     #projects-section {
         height: 200vh;
     }
+    /* The size of the about section */
     #about-section {
         height: 250vh;
     }
+    /* This is the size of the project cards */
     .project {
         width: 24rem;
         height: 20rem;
@@ -151,12 +195,15 @@ section {
 }
 
 @media (min-width: 992px) {
+    /* Landing page font size */
     #landing-page {
         font-size: 60px;
     }
+    /* Size of intr text */
     .font-cursive {
         font-size: 65px;
     }
+    /* Bio text size and style */
     #bio {
         font-size: 24px;
         line-height: 40px;
@@ -165,23 +212,29 @@ section {
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
+    /* The size of the project section */
     #projects-section {
         height: 180vh;
     }
+    /* The size of the about section */
     #about-section {
         height: 220vh;
     }
+    /* This is the size of the project cards */
     .project {
         width: 22rem;
         height: 16rem;
         font-size: 12px;
     }
+    /* Landing page font size */
     #landing-page {
         font-size: 55px;
     }
+    /* Size of intr text */
     .font-cursive {
         font-size: 50px;
     }
+    /* Bio text size and style */
     #bio {
         font-size: 24px;
         line-height: 40px;
@@ -190,26 +243,29 @@ section {
 }
 
 @media (min-width: 374px) and (max-width: 768px) {
+    /* The size of the project section */
     #projects-section {
         height: 160vh;
     }
+    /* The size of the about section */
     #about-section {
         height: 200vh;
     }
+    /* This is the size of the project cards */
     .project {
         width: 20rem;
         height: 15rem;
         font-size: 12px;
     }
-    .hover {
-        font-size: 18px;
-    }
+    /* Landing page font size */
     #landing-page {
         font-size: 50px;
     }
+    /* Size of intr text */
     .font-cursive {
         font-size: 35px;
     }
+    /* Bio text size and style */
     #bio {
         font-size: 20px;
         line-height: 30px;
@@ -218,23 +274,29 @@ section {
 }
 
 @media (max-width: 373px) {
+    /* The size of the project section */
     #projects-section {
         height: 200vh;
     }
+    /* The size of the about section */
     #about-section {
         height: 200vh;
     }
+    /* This is the size of the project cards */
     .project {
         width: 18rem;
         height: 14rem;
         font-size: 10px;
     }
+    /* Landing page font size */
     #landing-page {
         font-size: 45px;
     }
+    /* Size of intr text */
     .font-cursive {
         font-size: 30px;
     }
+    /* Bio text size and style */
     #bio {
         font-size: 18px;
         line-height: 20px;

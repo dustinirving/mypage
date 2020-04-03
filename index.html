@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <!-- Title -->
+    <title>Dustin Irving</title>
+    <!-- Bootstrap Styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- More Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- CSS Styling -->
     <link rel="stylesheet" href="styling/style.css">
 </head>
 
 <body>
+    <!-- Class used for scrolling effect -->
     <div class="parent">
-        <!-- This is the Landing page -->
+        <!-- This is the Landing page/Intro -->
         <section id="landing-page">
             <div id="typed-text" class="row">
                 <div class="col">
@@ -25,6 +31,7 @@
                 </div>
             </div>
 
+            <!-- Button to allow the user to jump to the navigation bar -->
             <div class="row d-flex justify-content-center">
                 <button id="landing-button" class="btn text-white scrollButton col">
                             Welcome <br> <i class="fas fa-angle-down"></i>
@@ -35,7 +42,7 @@
 
 
         <!-- This is the Header -->
-        <section class="section" id="header">
+        <section class="section snap-scroll" id="header">
             <header>
                 <div class="row">
                     <h1 class="text-center p-3 blue-background text-white mb-0 col-12"><a class="text-reset text-decoration-none font-style" href="#header">DUSTIN IRVING</a></h1>
@@ -43,21 +50,28 @@
             </header>
 
             <!-- This is the navigation bar -->
+            <!-- Within the navigation bar there are two tabs and 4 icons -->
+            <!-- The tabs allow the user to move to different sections on the page -->
+            <!-- The icons link to github, linked in, my resume and to email me -->
             <div class="row bg-light mt-0 light-border">
                 <div class="col-3 text-center"><button class="btn hover nav-font"><a class = "text-reset text-decoration-none" href="#projects-section">Projects</a></button></div>
                 <div class="col-6 text-center p-2">
-                    <a target="_blank" class="text-reset" href="https://github.com/dustinirving"><i class="fab fa-github fa-2x icon pb-0"></i></a>
-                    <a target="_blank" class="text-reset" href="resume.pdf"><i class="fa fa-file-text fa-2x icon"></i></a>
-                    <a class="text-reset" href="mailto:dustin.irving@gmail.com? subject=subject text"><i class="fas fa-envelope-square fa-2x icon"></i></a>
-                    <a target="_blank" class="text-reset" href="https://www.linkedin.com/in/dustin-irving-a92009194/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                    <a target="_blank" class="text-reset" href="https://github.com/dustinirving" title="Github"><i class="fab fa-github fa-2x icon pb-0"></i></a>
+                    <a target="_blank" class="text-reset" href="docs/resume.pdf" title="Resume"><i class="fa fa-file-text fa-2x icon"></i></a>
+                    <a class="text-reset" href="mailto:dustin.irving@gmail.com? subject=subject text" title="Email"><i class="fas fa-envelope-square fa-2x icon"></i></a>
+                    <a target="_blank" class="text-reset" href="https://www.linkedin.com/in/dustin-irving-a92009194/" title="Linkedin"><i class="fab fa-linkedin fa-2x icon"></i></a>
                 </div>
 
                 <div class="col-3 text-center"><button class="btn hover nav-font"><a class = "text-reset text-decoration-none" href="#about-section">About</a></button></div>
             </div>
+
+            <!-- This is my intro text -->
             <div>
                 <div class="row d-flex justify-content-center cursive-box">
                     <p id="quote" class="col-8 font-cursive">I enjoy combining logic with creativity to create user-friendly applicatons.</p>
                 </div>
+
+                <!-- This is a button that lets the user move to -->
                 <div class="row d-flex justify-content-center">
                     <button id="projects-button" class="btn text-dark scrollButton col">
                                 Check out my work. <br> <i class="fas fa-angle-down"></i>
@@ -65,12 +79,12 @@
                 </div>
 
             </div>
-
         </section>
-
-
         <div class="container">
             <!-- Projects -->
+            <!-- This is a big card made up of 4 smaller cards -->
+            <!-- Each of the smaller cards is a project that has a clickable link -->
+            <!-- When you hover over the image it animates into a gif -->
             <section id="projects-section">
                 <div class="bg-light mt-4 card section">
                     <div class="blue-background text-white card-header p-1">
@@ -81,20 +95,20 @@
                     <div class="row">
                         <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
                             <a class="text-reset text-decoration-none" href="https://lagbana.github.io/covid19-tracker/" target="_blank">
-                                <div class="card zoom project shadow">
-                                    <img src="gifs/covid-image.jpg" class="card-img-top" alt="..." data-animate="gifs/covid.gif" data-still="gifs/covid-image.jpg" data-state="still">
-                                    <div class="card-body">
-                                        <p class="card-text">The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. </p>
+                                <div target="gif-target" class="card zoom project shadow">
+                                    <img src="images/covid-image.jpg" class="card-img-top gif" alt="Covid-19 Tracker" data-animate="gifs/covid.gif" data-still="images/covid-image.jpg" data-state="still">
+                                    <div class="card-body card-text">
+                                        The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. </p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/" target="_blank">
-                                <div class="card zoom project shadow">
-                                    <img src="gifs/weather-forecast-image.jpg" class="card-img-top" alt="weather" data-animate="gifs/weather-forecast.gif" data-still="gifs/weather-forecast-image.jpg" data-state="still">
-                                    <div class="card-body">
-                                        <p class="card-text">This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed. </p>
+                            <a value="gif-target" class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/" target="_blank">
+                                <div target="gif-target" class="card zoom project shadow">
+                                    <img src="images/weather-forecast-image.jpg" class="card-img-top gif" alt="Weather Forecast" data-animate="gifs/weather-forecast.gif" data-still="images/weather-forecast-image.jpg" data-state="still">
+                                    <div class="card-body card-text">
+                                        This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed. </p>
                                     </div>
                                 </div>
                             </a>
@@ -103,31 +117,31 @@
                     </div>
                     <div class="row mb-4">
                         <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a class="text-reset text-decoration-none" href="https://github.com/dustinirving/country-capitals" target="_blank">
-                                <div class="card zoom project shadow">
-                                    <img src="gifs/quiz-image.jpg" class="card-img-top" alt="..." data-animate="gifs/quiz.gif" data-still="gifs/quiz-image.jpg" data-state="still">
-                                    <div class="card-body">
-                                        <p class="card-text">This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores. </p>
+                            <a value="gif-target" class="text-reset text-decoration-none" href="https://github.com/dustinirving/country-capitals" target="_blank">
+                                <div target="gif-target" class="card zoom project shadow">
+                                    <img src="images/quiz-image.jpg" class="card-img-top gif" alt="Capitals Quiz" data-animate="gifs/quiz.gif" data-still="images/quiz-image.jpg" data-state="still">
+                                    <div class="card-body card-text">
+                                        This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores. </p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a class="text-reset text-decoration-none" href="https://dustinirving.github.io/daily-planner/" target="_blank">
-                                <div class="card zoom project shadow">
-                                    <img src="gifs/planner-image.jpg" class="card-img-top" alt="..." data-animate="gifs/planner.gif" data-still="gifs/planner-image.jpg" data-state="still">
-                                    <div class="card-body">
-                                        <p class="card-text">In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.</p>
+                            <a value="gif-target" class="text-reset text-decoration-none gif-target" href="https://dustinirving.github.io/daily-planner/" target="_blank">
+                                <div target="gif-target" class="card zoom project shadow">
+                                    <img src="images/planner-image.jpg" class="card-img-top gif" alt="Daily Planner" data-animate="gifs/planner.gif" data-still="images/planner-image.jpg" data-state="still">
+                                    <div class="card-body card-text">
+                                        In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.</p>
                                     </div>
-                                </div>
                             </a>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
             </section>
 
             <!-- About -->
+            <!-- This is the about section with my image and information about me -->
             <section id="about-section">
                 <div class="mt-4 mb-4 bg-light card pb-3">
                     <div class="row blue-background ml-0 mr-0 p-1 text-white card-header">
@@ -149,10 +163,11 @@
                 </footer>
             </section>
 
-        </div>
+            </div>
 
-    </div>
-    <script src="scripts/script.js"></script>
+        </div>
+        <!-- This is the link to the script -->
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>
