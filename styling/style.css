@@ -205,11 +205,7 @@ section {
     }
     /* The size of the project section */
     #projects-section {
-        height: 200vh;
-    }
-    /* The size of the about section */
-    #about-section {
-        height: 250vh;
+        height: 1400px;
     }
     /* This is the size of the project cards */
     .project {
@@ -245,17 +241,7 @@ section {
     }
     /* The size of the project section */
     #projects-section {
-        height: 180vh;
-    }
-    /* The size of the about section */
-    #about-section {
-        height: 220vh;
-    }
-    /* This is the size of the project cards */
-    .project {
-        width: 22rem;
-        height: 16rem;
-        font-size: 12px;
+        height: 1350px;
     }
     /* Landing page font size */
     #landing-page {
@@ -276,23 +262,13 @@ section {
 @media (min-width: 374px) and (max-width: 768px) {
     /* This is the size of the project cards */
     .project-size {
-        width: 22rem;
-        height: 16rem;
+        width: 20rem;
+        height: 15rem;
         font-size: 14px;
     }
     /* The size of the project section */
     #projects-section {
-        height: 160vh;
-    }
-    /* The size of the about section */
-    #about-section {
-        height: 200vh;
-    }
-    /* This is the size of the project cards */
-    .project {
-        width: 20rem;
-        height: 15rem;
-        font-size: 12px;
+        height: 1200px;
     }
     /* Landing page font size */
     #landing-page {
@@ -313,11 +289,7 @@ section {
 @media (max-width: 373px) {
     /* The size of the project section */
     #projects-section {
-        height: 200vh;
-    }
-    /* The size of the about section */
-    #about-section {
-        height: 200vh;
+        height: 1000px;
     }
     /* This is the size of the project cards */
     .project-size {
