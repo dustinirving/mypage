@@ -189,8 +189,8 @@ projects.addEventListener("click", function(event) {
     let uncle = parent.previousElementSibling
     firstLink = element.childNodes[3]
     secondLink = element.childNodes[5]
+    console.log(element.getAttribute("state"))
     if (element.getAttribute("state") === "animated") {
-        element.setAttribute("state", "static")
         if (element.getAttribute("target") === "project-target") {
             sibling.setAttribute("data-state", "still")
             sibling.setAttribute("src", sibling.getAttribute("data-still"))
@@ -206,8 +206,9 @@ projects.addEventListener("click", function(event) {
             parent.childNodes[3].setAttribute("style", "display: block;")
             parent.childNodes[5].setAttribute("style", "display: block;")
         }
+        element.setAttribute("state", "static")
     } else {
-        element.setAttribute("state", "animated")
+
         if (element.getAttribute("target") === "project-target") {
             sibling.setAttribute("data-state", "animate")
             sibling.setAttribute("src", sibling.getAttribute("data-animate"))
@@ -223,5 +224,6 @@ projects.addEventListener("click", function(event) {
             parent.childNodes[3].setAttribute("style", "display: none;")
             parent.childNodes[5].setAttribute("style", "display: none;")
         }
+        element.setAttribute("state", "animated")
     }
 })
