@@ -1,5 +1,24 @@
 /* Smooth scrolling */
 
+.card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* align the links to the center */
+
+.align-center {
+    text-align: center;
+}
+
+
+/* projects font */
+
+.text-style {
+    font-style: 'Oswald';
+}
+
 
 /* This allows the scrolling to slowly move from one section to another */
 
@@ -114,8 +133,6 @@ section {
 .zoom {
     transition: transform .2s;
     /* Animation */
-    width: 200px;
-    height: 200px;
 }
 
 
@@ -145,15 +162,15 @@ section {
 
 @media (min-width: 1200px) {
     /* This is the size of the project cards */
-    .project {
-        width: 24rem;
-        height: 20rem;
-        font-size: 16px;
+    .project-size {
+        width: 25rem;
+        height: 18rem;
+        font-size: 20px;
     }
     /* The size of the bio text */
     #bio {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 35px;
         font-weight: 350;
     }
     /* Snap scrolling effect */
@@ -170,6 +187,9 @@ section {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
     }
+    #about-section {
+        height: 120vh;
+    }
     section {
         height: 100vh;
         scroll-snap-align: start;
@@ -178,6 +198,11 @@ section {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    .project-size {
+        width: 25rem;
+        height: 18rem;
+        font-size: 20px;
+    }
     /* The size of the project section */
     #projects-section {
         height: 200vh;
@@ -212,6 +237,12 @@ section {
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
+    /* This is the size of the project cards */
+    .project-size {
+        width: 25rem;
+        height: 18rem;
+        font-size: 18px;
+    }
     /* The size of the project section */
     #projects-section {
         height: 180vh;
@@ -243,6 +274,12 @@ section {
 }
 
 @media (min-width: 374px) and (max-width: 768px) {
+    /* This is the size of the project cards */
+    .project-size {
+        width: 22rem;
+        height: 16rem;
+        font-size: 14px;
+    }
     /* The size of the project section */
     #projects-section {
         height: 160vh;
@@ -283,9 +320,9 @@ section {
         height: 200vh;
     }
     /* This is the size of the project cards */
-    .project {
-        width: 18rem;
-        height: 14rem;
+    .project-size {
+        width: 16rem;
+        height: 12rem;
         font-size: 10px;
     }
     /* Landing page font size */

@@ -111,21 +111,117 @@ typeLoop()
 
 // Landing page writer code ends
 
-// This animates the gifs on hover and changes the gif to a picture when the user moves off the gif
+// Mouse hover events
+// By default the gif plays
+// When the user moves their mouse over the project the gif changes to an image
+// The opacity is set to lower of the image
+// There is a title and description of the project
 
 let projects = document.getElementById("projects-section")
 
+// Mouse hover
 projects.addEventListener("mouseover", function(event) {
+    // Getting the target and relatives
     let element = event.target
-    if (element.matches('img')) {
-        element.setAttribute("data-state", "animate")
-        element.setAttribute("src", element.getAttribute("data-animate"))
+    let sibling = element.previousElementSibling
+    let parent = event.target.parentElement
+    let uncle = parent.previousElementSibling
+    firstLink = element.childNodes[3]
+    secondLink = element.childNodes[5]
+        // Setting the various properties
+    if (element.getAttribute("target") === "project-target") {
+        // State set to static
+        element.setAttribute("state", "static")
+        sibling.setAttribute("data-state", "still")
+        sibling.setAttribute("src", sibling.getAttribute("data-still"))
+        sibling.setAttribute("style", "opacity: 0.2;")
+        element.setAttribute("style", "color: black;")
+        firstLink.setAttribute("style", "display: block;")
+        secondLink.setAttribute("style", "display: block;")
+
+    }
+    // In case you hover over the title or links
+    // Prevents that glitch
+    else if (element.getAttribute("target") === "child-target") {
+        element.setAttribute("state", "static")
+        uncle.setAttribute("data-state", "still")
+        uncle.setAttribute("src", uncle.getAttribute("data-still"))
+        uncle.setAttribute("style", "opacity: 0.2;")
+        parent.setAttribute("style", "color: black;")
+        parent.childNodes[3].setAttribute("style", "display: block;")
+        parent.childNodes[5].setAttribute("style", "display: block;")
     }
 })
+
+// Mouse out event
 projects.addEventListener("mouseout", function(event) {
     let element = event.target
-    if (element.matches('img')) {
-        element.setAttribute("data-state", "still")
-        element.setAttribute("src", element.getAttribute("data-still"))
+    let sibling = element.previousElementSibling
+    let parent = event.target.parentElement
+    let uncle = parent.previousElementSibling
+    firstLink = element.childNodes[3]
+    secondLink = element.childNodes[5]
+    if (element.getAttribute("target") === "project-target") {
+        // State set to animated
+        element.setAttribute("state", "animated")
+        sibling.setAttribute("data-state", "animate")
+        sibling.setAttribute("src", sibling.getAttribute("data-animate"))
+        sibling.setAttribute("style", "opacity: 1;")
+        element.setAttribute("style", "color: transparent;")
+        firstLink.setAttribute("style", "display: none;")
+        secondLink.setAttribute("style", "display: none;")
+    } else if (element.getAttribute("target") === "child-target") {
+        element.setAttribute("state", "animated")
+        uncle.setAttribute("data-state", "animate")
+        uncle.setAttribute("src", uncle.getAttribute("data-animate"))
+        uncle.setAttribute("style", "opacity: 1;")
+        parent.setAttribute("style", "color: transparent;")
+        parent.childNodes[3].setAttribute("style", "display: none;")
+        parent.childNodes[5].setAttribute("style", "display: none;")
+    }
+})
+
+// Click event does the same as the hover event
+projects.addEventListener("click", function(event) {
+    let element = event.target
+    let sibling = element.previousElementSibling
+    let parent = event.target.parentElement
+    let uncle = parent.previousElementSibling
+    firstLink = element.childNodes[3]
+    secondLink = element.childNodes[5]
+    if (element.getAttribute("state") === "animated") {
+        element.setAttribute("state", "static")
+        if (element.getAttribute("target") === "project-target") {
+            sibling.setAttribute("data-state", "still")
+            sibling.setAttribute("src", sibling.getAttribute("data-still"))
+            sibling.setAttribute("style", "opacity: 0.2;")
+            element.setAttribute("style", "color: black;")
+            firstLink.setAttribute("style", "display: block;")
+            secondLink.setAttribute("style", "display: block;")
+        } else if (element.getAttribute("target") === "child-target") {
+            uncle.setAttribute("data-state", "still")
+            uncle.setAttribute("src", uncle.getAttribute("data-still"))
+            uncle.setAttribute("style", "opacity: 0.2;")
+            parent.setAttribute("style", "color: black;")
+            parent.childNodes[3].setAttribute("style", "display: block;")
+            parent.childNodes[5].setAttribute("style", "display: block;")
+        }
+    } else {
+        element.setAttribute("state", "animated")
+        if (element.getAttribute("target") === "project-target") {
+            sibling.setAttribute("data-state", "animate")
+            sibling.setAttribute("src", sibling.getAttribute("data-animate"))
+            sibling.setAttribute("style", "opacity: 1;")
+            element.setAttribute("style", "color: transparent;")
+            firstLink.setAttribute("style", "display: none;")
+            secondLink.setAttribute("style", "display: none;")
+        } else if (element.getAttribute("target") === "child-target") {
+            uncle.setAttribute("data-state", "animate")
+            uncle.setAttribute("src", uncle.getAttribute("data-animate"))
+            uncle.setAttribute("style", "opacity: 1;")
+            parent.setAttribute("style", "color: transparent;")
+            parent.childNodes[3].setAttribute("style", "display: none;")
+            parent.childNodes[5].setAttribute("style", "display: none;")
+        }
     }
 })

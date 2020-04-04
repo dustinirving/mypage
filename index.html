@@ -85,8 +85,8 @@
             <!-- This is a big card made up of 4 smaller cards -->
             <!-- Each of the smaller cards is a project that has a clickable link -->
             <!-- When you hover over the image it animates into a gif -->
-            <section id="projects-section">
-                <div class="bg-light mt-4 card section">
+            <section event="mouse-out" id="projects-section">
+                <div event="mouse-out" class="bg-light mt-4 card section">
                     <div class="blue-background text-white card-header p-1">
                         <div class="font-style d-flex justify-content-center">
                             <h2>Recent Projects</h2>
@@ -94,50 +94,63 @@
                     </div>
                     <div class="row">
                         <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
-                            <a class="text-reset text-decoration-none" href="https://lagbana.github.io/covid19-tracker/" target="_blank">
-                                <div target="gif-target" class="card zoom project shadow">
-                                    <img src="images/covid-image.jpg" class="card-img-top gif" alt="Covid-19 Tracker" data-animate="gifs/covid.gif" data-still="images/covid-image.jpg" data-state="still">
-                                    <div class="card-body card-text">
-                                        The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates. </p>
+                            <div class="card shadow project-size">
+                                <img src="gifs/covid.gif" class="card-img gif project-size opacity" alt="Covid-19 Tracker" data-animate="gifs/covid.gif" data-still="images/covid.jpg" data-state="animate">
+                                <div state="animated" target="project-target" class="card-img-overlay display text-style" style="opacity: 1;color: transparent">
+                                    <div target="child-target" class="card-title">
+                                        COVID-19 Tracker
                                     </div>
+                                    The COVID-19 Tracker retrieves the latest data regarding cases of COVID-19 and displays a graphical representation. It also provides the user with the most recent news updates.
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://lagbana.github.io/covid19-tracker/">Site</a>
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://github.com/dustinirving/covid19-tracker">Repo</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a value="gif-target" class="text-reset text-decoration-none" href="https://dustinirving.github.io/weather-forecast/" target="_blank">
-                                <div target="gif-target" class="card zoom project shadow">
-                                    <img src="images/weather-forecast-image.jpg" class="card-img-top gif" alt="Weather Forecast" data-animate="gifs/weather-forecast.gif" data-still="images/weather-forecast-image.jpg" data-state="still">
-                                    <div class="card-body card-text">
-                                        This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed. </p>
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
+                            <div class="card shadow project-size">
+                                <img src="gifs/weather.gif" class="card-img gif project-size opacity" alt="Weather Forecast" data-animate="gifs/weather.gif" data-still="images/weather.jpg" data-state="animate">
+                                <div state="animated" target="project-target" class="card-img-overlay display text-style" style="opacity: 1;color: transparent">
+                                    <div target="child-target" class="card-title">
+                                        Weather Forecast
                                     </div>
+                                    This application makes use of a weather API to display the 5-day weather forecast for a specified location. When you load up the page, the most recent searched is displayed.
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://dustinirving.github.io/weather-forecast/">Site</a>
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://github.com/dustinirving/weather-forecast">Repo</a>
                                 </div>
-                            </a>
-                        </div>
 
-                    </div>
-                    <div class="row mb-4">
-                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a value="gif-target" class="text-reset text-decoration-none" href="https://github.com/dustinirving/country-capitals" target="_blank">
-                                <div target="gif-target" class="card zoom project shadow">
-                                    <img src="images/quiz-image.jpg" class="card-img-top gif" alt="Capitals Quiz" data-animate="gifs/quiz.gif" data-still="images/quiz-image.jpg" data-state="still">
-                                    <div class="card-body card-text">
-                                        This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores. </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center">
-                            <a value="gif-target" class="text-reset text-decoration-none gif-target" href="https://dustinirving.github.io/daily-planner/" target="_blank">
-                                <div target="gif-target" class="card zoom project shadow">
-                                    <img src="images/planner-image.jpg" class="card-img-top gif" alt="Daily Planner" data-animate="gifs/planner.gif" data-still="images/planner-image.jpg" data-state="still">
-                                    <div class="card-body card-text">
-                                        In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.</p>
-                                    </div>
-                            </a>
                             </div>
                         </div>
 
                     </div>
+                    <div class="row mb-4">
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
+                            <div class="card shadow project-size">
+                                <img src="gifs/quiz.gif" class="card-img gif project-size opacity" alt="Capitals Quiz" data-animate="gifs/quiz.gif" data-still="images/quiz.jpg" data-state="animate">
+                                <div state="animated" target="project-target" class="card-img-overlay display text-style" style="opacity: 1;color: transparent">
+                                    <div state="animated" target="child-target" class="card-title p-0">
+                                        Country Capitals Quiz
+                                    </div>
+                                    This is a quiz to test your knowledge of country capitals around the world. You have 60 seconds to answer 5 questions. You can then enter your final score into the highscores.
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" class="mt-2" href="https://dustinirving.github.io/country-capitals/">Site</a>
+                                    <a state="animated" class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://github.com/dustinirving/country-capitals">Repo</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-4 col-xl-6 col-lg-12 d-flex justify-content-center ">
+                            <div target="gif-target" class="card shadow project-size">
+                                <img src="gifs/planner.gif" class="card-img gif project-size opacity" alt="Daily Planner" data-animate="gifs/planner.gif" data-still="images/planner.jpg" data-state="animate">
+                                <div state="animated" target="project-target" class="card-img-overlay display text-style" style="opacity: 1;color: transparent">
+                                    <div target="child-target" class="card-title">
+                                        Daily Planner
+                                    </div>
+                                    In this program, a user can enter their daily activities into a day planner, which they can then save to record important events throughout their day.
+                                    <a class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://dustinirving.github.io/daily-planner/">Site</a>
+                                    <a class="text-decoration-none align-center" target="child-target" style="display: none;" href="https://github.com/dustinirving/daily-planner">Repo</a>
+                                </div>
+
+                            </div>
+                        </div>
             </section>
 
             <!-- About -->
@@ -150,24 +163,35 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <p id="bio" class="card-body pt-4 pl-5 pr-5 col-xl-7 col-lg-12 d-flex justify-content-center"> Full Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Knowledgeable in all areas of computer programming. Expertise in
-                            HTML, CSS, Bootstrap, Javascript, Node.js, Python, React.js, MYSQL, MongoDB and more. Dedicated individual with exceptional problem solving skills and an objective way of thinking. Passionate about learning, creating and improving.
-                            With every project, an obsession develops, until the finer details are optimized for user experience. When I am not busy working on a project, I enjoy travelling, camping and being outdoors. Thanks for visitng website. Please
-                            feel free to contact me and check out my Github, Linkedin, and Resume. </p>
-                        <img id="dustin-image" class="pt-4 pl-5 pr-5 col-xl-5 col-lg-12 rounded d-flex justify-content-center img-fluid" src="images/dustin.jpeg" alt="">
+                        <div id="bio" class="card-body pb-0 pt-4 pl-5 pr-5 col-xl-7 col-lg-12 d-flex justify-content-center">
+                            <p>Stack Web Developer with a Bachelor of Science in Biochemistry at the University of Ottawa and a certificate in Full Stack Development at Carleton Universtiy. Knowledgeable in all areas of computer programming. Expertise in
+                                HTML, CSS, Bootstrap, Javascript, Node.js, Python, React.js, MYSQL, MongoDB and more. Dedicated individual with exceptional problem solving skills and an objective way of thinking. Passionate about learning, creating and
+                                improving. With every project, an obsession develops, until the finer details are optimized for user experience. When I am not busy working on a project, I enjoy travelling, camping and being outdoors. Thanks for visitng
+                                website. Please feel free to contact me and check out my Github, Linkedin, and Resume. See Email and Phone Number below.
+                            </p>
+                        </div>
+
+                        <img id="dustin-image" class="pb-5 pt-4 pl-5 pr-5 col-xl-5 col-lg-12 rounded d-flex justify-content-center img-fluid" src="images/dustin.jpeg" alt="">
                     </div>
                 </div>
                 <!-- Footer -->
-                <footer class="text-center mt-2">
-                    &copy; Copyright 2020
+                <footer class="text-center mt-3">
+                    <div>Email: dustin.irving@gmail.com
+                    </div>
+                    <div>
+                        Phone Number: 1-613-292-4533
+                    </div>
+                    <div class="mt-4">
+                        &copy; Copyright 2020
+                    </div>
                 </footer>
             </section>
 
             </div>
 
-        </div>
-        <!-- This is the link to the script -->
-        <script src="scripts/script.js"></script>
+            </div>
+            <!-- This is the link to the script -->
+            <script src="scripts/script.js"></script>
 </body>
 
 </html>
