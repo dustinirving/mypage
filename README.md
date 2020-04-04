@@ -9,9 +9,10 @@ This is my portfolio. The user is first greeted with text that is being typed ab
 ![](gifs/mypage.gif)
 
 ## Future Endevers
-- Make the gif become animated if the user hovers over the text instead of the actual image
 - Change the responsiveness of my picture in the about me section
 - Make snap scroll work on mobile
+- Add more projects
+- Add some more cool effects
 
 ## Honourable Mention
 
