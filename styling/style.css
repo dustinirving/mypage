@@ -1,314 +1,295 @@
 /* Smooth scrolling */
 
 .card-title {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
-
 
 /* align the links to the center */
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* projects font */
 
 .text-style {
-    font-style: 'Oswald';
+  font-style: "Oswald";
 }
-
 
 /* This allows the scrolling to slowly move from one section to another */
 
 html,
 body {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .parent {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  position: relative;
+}
+
+/* Landing Page */
+
+#landing-page {
+  color: white;
+  background-color: #4484ce;
+  text-align: center;
+  font-style: "oswald";
+  height: 100vh;
+  position: relative;
+}
+
+/* Add padding to the top of the screen */
+
+#typed-text {
+  padding-top: 35vh;
+}
+
+.blinking-cursor {
+  pointer-events: none;
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+/* Centered header section */
+
+#header {
+  text-align: center;
+}
+
+/* Position of Scroll Text */
+
+.scrollButton {
+  position: absolute;
+  bottom: 3vh;
+  text-align: center;
+}
+
+/* Border for Header */
+
+.light-border {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* Font of navigation bar tabs */
+
+.nav-font {
+  font-size: 22px;
+  font-family: "Oswald";
+}
+
+/* Font style */
+
+.font-style {
+  font-family: "Oswald";
+}
+
+/* Hover Nav Bar */
+
+.hover:hover {
+  background-color: lightgray;
+}
+
+/* Intro Text */
+
+.font-cursive {
+  font-family: cursive;
+}
+
+/* Make the text positioned from the top of the screen */
+
+.cursive-box {
+  position: absolute;
+  top: 30vh;
+}
+
+/* Projects Zoom */
+
+.zoom {
+  transition: transform 0.2s;
+  /* Animation */
+}
+
+/* When you hover over one of the projects */
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+/* When you hover over an icon in the navigation bar */
+
+.icon:hover {
+  transform: scale(1.2);
+  color: gray;
+}
+
+/* This blue background is reused */
+
+.blue-background {
+  background-color: #4484ce;
+}
+
+/* Responsiveness */
+
+@media (min-width: 1200px) {
+  /* This is the size of the project cards */
+  .project-size {
+    width: 25rem;
+    height: 18rem;
+    font-size: 20px;
+  }
+  /* The size of the bio text */
+  #bio {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 350;
+  }
+  /* Snap scrolling effect */
+  html,
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .parent {
     overflow: scroll;
     height: 100vh;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-}
-
-section {
+  }
+  #about-section {
+    height: 120vh;
+  }
+  section {
     height: 100vh;
     position: relative;
-}
-
-
-/* Landing Page */
-
-#landing-page {
-    color: white;
-    background-color: #4484CE;
-    text-align: center;
-    font-style: 'oswald';
-    height: 100vh;
-    position: relative;
-}
-
-
-/* Add padding to the top of the screen */
-
-#typed-text {
-    padding-top: 35vh;
-}
-
-.blinking-cursor {
-    pointer-events: none;
-    user-select: none;
-    animation: blink 1s steps(2, start) infinite;
-}
-
-
-/* Centered header section */
-
-#header {
-    text-align: center;
-}
-
-
-/* Position of Scroll Text */
-
-.scrollButton {
-    position: absolute;
-    bottom: 3vh;
-    text-align: center;
-}
-
-
-/* Border for Header */
-
-.light-border {
-    border-bottom: 1px solid #DCDCDC;
-}
-
-
-/* Font of navigation bar tabs */
-
-.nav-font {
-    font-size: 22px;
-    font-family: 'Oswald'
-}
-
-
-/* Font style */
-
-.font-style {
-    font-family: 'Oswald'
-}
-
-
-/* Hover Nav Bar */
-
-.hover:hover {
-    background-color: lightgray;
-}
-
-
-/* Intro Text */
-
-.font-cursive {
-    font-family: cursive;
-}
-
-
-/* Make the text positioned from the top of the screen */
-
-.cursive-box {
-    position: absolute;
-    top: 30vh;
-}
-
-
-/* Projects Zoom */
-
-.zoom {
-    transition: transform .2s;
-    /* Animation */
-}
-
-
-/* When you hover over one of the projects */
-
-.zoom:hover {
-    transform: scale(1.1);
-}
-
-
-/* When you hover over an icon in the navigation bar */
-
-.icon:hover {
-    transform: scale(1.2);
-    color: gray;
-}
-
-
-/* This blue background is reused */
-
-.blue-background {
-    background-color: #4484CE
-}
-
-
-/* Responsiveness */
-
-@media (min-width: 1200px) {
-    /* This is the size of the project cards */
-    .project-size {
-        width: 25rem;
-        height: 18rem;
-        font-size: 20px;
-    }
-    /* The size of the bio text */
-    #bio {
-        font-size: 22px;
-        line-height: 35px;
-        font-weight: 350;
-    }
-    /* Snap scrolling effect */
-    html,
-    body {
-        height: 100vh;
-        overflow: hidden;
-    }
-    .parent {
-        overflow: scroll;
-        height: 100vh;
-        scroll-snap-type: mandatory;
-        scroll-snap-points-y: repeat(100vh);
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    }
-    #about-section {
-        height: 120vh;
-    }
-    section {
-        height: 100vh;
-        scroll-snap-align: start;
-        position: relative;
-    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .project-size {
-        width: 25rem;
-        height: 18rem;
-        font-size: 20px;
-    }
-    /* The size of the project section */
-    #projects-section {
-        height: 1400px;
-    }
-    /* This is the size of the project cards */
-    .project {
-        width: 24rem;
-        height: 20rem;
-        font-size: 16px;
-    }
+  .project-size {
+    width: 25rem;
+    height: 18rem;
+    font-size: 20px;
+  }
+  /* The size of the project section */
+  #projects-section {
+    height: 1400px;
+  }
+  /* This is the size of the project cards */
+  .project {
+    width: 24rem;
+    height: 20rem;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
-    /* Landing page font size */
-    #landing-page {
-        font-size: 60px;
-    }
-    /* Size of intr text */
-    .font-cursive {
-        font-size: 65px;
-    }
-    /* Bio text size and style */
-    #bio {
-        font-size: 24px;
-        line-height: 40px;
-        font-weight: 350;
-    }
+  /* Landing page font size */
+  #landing-page {
+    font-size: 60px;
+  }
+  /* Size of intr text */
+  .font-cursive {
+    font-size: 65px;
+  }
+  /* Bio text size and style */
+  #bio {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 350;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-    /* This is the size of the project cards */
-    .project-size {
-        width: 25rem;
-        height: 18rem;
-        font-size: 18px;
-    }
-    /* The size of the project section */
-    #projects-section {
-        height: 1350px;
-    }
-    /* Landing page font size */
-    #landing-page {
-        font-size: 55px;
-    }
-    /* Size of intr text */
-    .font-cursive {
-        font-size: 50px;
-    }
-    /* Bio text size and style */
-    #bio {
-        font-size: 24px;
-        line-height: 40px;
-        font-weight: 350;
-    }
+  /* This is the size of the project cards */
+  .project-size {
+    width: 25rem;
+    height: 18rem;
+    font-size: 18px;
+  }
+  /* The size of the project section */
+  #projects-section {
+    height: 1350px;
+  }
+  /* Landing page font size */
+  #landing-page {
+    font-size: 55px;
+  }
+  /* Size of intr text */
+  .font-cursive {
+    font-size: 50px;
+  }
+  /* Bio text size and style */
+  #bio {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 350;
+  }
 }
 
 @media (min-width: 374px) and (max-width: 768px) {
-    /* This is the size of the project cards */
-    .project-size {
-        width: 20rem;
-        height: 15rem;
-        font-size: 14px;
-    }
-    /* The size of the project section */
-    #projects-section {
-        height: 1200px;
-    }
-    /* Landing page font size */
-    #landing-page {
-        font-size: 50px;
-    }
-    /* Size of intr text */
-    .font-cursive {
-        font-size: 35px;
-    }
-    /* Bio text size and style */
-    #bio {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 350;
-    }
+  /* This is the size of the project cards */
+  .project-size {
+    width: 20rem;
+    height: 15rem;
+    font-size: 14px;
+  }
+  /* The size of the project section */
+  #projects-section {
+    height: 1200px;
+  }
+  /* Landing page font size */
+  #landing-page {
+    font-size: 50px;
+  }
+  /* Size of intr text */
+  .font-cursive {
+    font-size: 35px;
+  }
+  /* Bio text size and style */
+  #bio {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 350;
+  }
 }
 
 @media (max-width: 373px) {
-    /* The size of the project section */
-    #projects-section {
-        height: 1000px;
-    }
-    /* This is the size of the project cards */
-    .project-size {
-        width: 16rem;
-        height: 12rem;
-        font-size: 10px;
-    }
-    /* Landing page font size */
-    #landing-page {
-        font-size: 45px;
-    }
-    /* Size of intr text */
-    .font-cursive {
-        font-size: 30px;
-    }
-    /* Bio text size and style */
-    #bio {
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 350;
-    }
+  /* The size of the project section */
+  #projects-section {
+    height: 1000px;
+  }
+  /* This is the size of the project cards */
+  .project-size {
+    width: 16rem;
+    height: 12rem;
+    font-size: 10px;
+  }
+  /* Landing page font size */
+  #landing-page {
+    font-size: 45px;
+  }
+  /* Size of intr text */
+  .font-cursive {
+    font-size: 30px;
+  }
+  /* Bio text size and style */
+  #bio {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 350;
+  }
 }
